@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <title>Senarai Tanah Pamah Asia Tenggara</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Roboto', Arial, sans-serif; background: #f2f6fa; margin: 0; }
+        header { background: #16406C; color: #fff; padding: 36px 0 24px 0; text-align: center; box-shadow: 0 2px 8px rgba(22,64,108,0.10); }
+        header h1 { font-family: 'Montserrat', Arial, sans-serif; font-weight: 700; font-size: 2.2rem; margin: 0 0 8px 0; letter-spacing: 1px; }
+        nav { background: #e0ebf7; text-align: center; padding: 12px 0; font-size: 1.13rem; }
+        nav a { color: #16406C; text-decoration: none; margin: 0 18px; font-weight: 600; transition: color 0.2s; }
+        nav a:hover { color: #1a5fb4; }
+        .container { max-width: 700px; margin: 38px auto; background: #fff; border-radius: 12px; box-shadow: 0 4px 16px rgba(22,64,108,0.10); padding: 36px 32px 28px 32px; }
+        h2 { font-family: 'Montserrat', Arial, sans-serif; color: #16406C; font-size: 1.35rem; margin-bottom: 18px; margin-top: 0; border-left: 5px solid #16406C; padding-left: 12px; }
+        ul { margin: 0 0 18px 0; padding-left: 28px; }
+        li { font-size: 1.08rem; margin-bottom: 10px; color: #26354a; }
+        .info { background: #f0f6fc; border-left: 4px solid #16406C; padding: 12px 18px; margin: 24px 0 0 0; color: #16406C; }
+        footer { text-align: center; margin: 38px 0 14px 0; color: #7c98c2; font-size: .98rem; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Senarai Tanah Pamah Asia Tenggara</h1>
+    </header>
+    <nav>
+        <a href="index.html">Utama</a>
+        <a href="tanah-pamah.html">Tanah Pamah</a>
+    </nav>
+    <div class="container">
+        <h2>Tanah Pamah di Asia Tenggara</h2>
+        <ul>
+            <li>Tanah Pamah Dataran Chao Phraya – Thailand</li>
+            <li>Tanah Pamah Dataran Irrawaddy – Myanmar</li>
+            <li>Tanah Pamah Dataran Menam – Thailand</li>
+            <li>Tanah Pamah Dataran Mekong – merentasi Thailand, Laos, Kemboja, dan Vietnam</li>
+            <li>Tanah Pamah Dataran Tonle Sap – Kemboja</li>
+            <li>Tanah Pamah Delta Mekong – Vietnam</li>
+            <li>Tanah Pamah Delta Irrawaddy – Myanmar</li>
+            <li>Tanah Pamah Dataran Kinta – Malaysia</li>
+            <li>Tanah Pamah Dataran Kedah-Perlis – Malaysia</li>
+            <li>Tanah Pamah Dataran Pantai Barat – Malaysia</li>
+            <li>Tanah Pamah Dataran Pantai Timur – Malaysia</li>
+            <li>Tanah Pamah Dataran Kapuas – Kalimantan Barat, Indonesia</li>
+            <li>Tanah Pamah Dataran Barito – Kalimantan Tengah, Indonesia</li>
+            <li>Tanah Pamah Dataran Mahakam – Kalimantan Timur, Indonesia</li>
+            <li>Tanah Pamah Dataran Musi – Sumatera Selatan, Indonesia</li>
+            <li>Tanah Pamah Dataran Palembang – Indonesia</li>
+            <li>Tanah Pamah Dataran Solo – Pulau Jawa, Indonesia</li>
+            <li>Tanah Pamah Dataran Cagayan – Filipina</li>
+            <li>Tanah Pamah Dataran Central Luzon – Filipina</li>
+            <li>Tanah Pamah Dataran Mindanao – Filipina</li>
+        </ul>
+        <div class="info">
+            <strong>Nota:</strong> Tanah pamah merupakan kawasan yang subur dan sesuai untuk pertanian serta mempunyai kepadatan penduduk yang tinggi kerana kemudahan jaringan perhubungan dan petempatan.
+        </div>
+    </div>
+    <footer>
+        © 2025. Laman rasmi Geografi untuk guru sekolah. | Dibangunkan oleh powjoeel
+    </footer>
+</body>
+</html>
