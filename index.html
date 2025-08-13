@@ -12,23 +12,78 @@
         nav { background: #e0ebf7; text-align: center; padding: 15px 0; font-size: 1.18rem; box-shadow: 0 2px 8px rgba(22,64,108,0.10);}
         nav a { color: #16406C; text-decoration: none; margin: 0 22px; font-weight: 600; transition: color 0.2s, background 0.2s; padding: 7px 18px; border-radius: 6px;}
         nav a.active, nav a:hover { color: #fff; background: #16406C; }
-        .container { max-width: 700px; margin: 50px auto 24px auto; background: #fff; border-radius: 14px; box-shadow: 0 4px 16px rgba(22,64,108,0.10); padding: 48px 40px 38px 40px; }
-        h2 { font-family: 'Montserrat', Arial, sans-serif; color: #16406C; font-size: 1.6rem; margin-top: 0; margin-bottom: 24px; border-left: 5px solid #16406C; padding-left: 14px; }
+        .container { max-width: 700px; margin: 48px auto 24px auto; background: #fff; border-radius: 14px; box-shadow: 0 4px 16px rgba(22,64,108,0.10); padding: 42px 36px 36px 36px; }
+        h2 { font-family: 'Montserrat', Arial, sans-serif; color: #16406C; font-size: 1.6rem; margin-top: 0; margin-bottom: 20px; border-left: 5px solid #16406C; padding-left: 14px; }
         ul { margin: 0 0 18px 0; padding-left: 28px; }
-        li { font-size: 1.14rem; margin-bottom: 10px; color: #26354a; }
+        li { font-size: 1.12rem; margin-bottom: 10px; color: #26354a; }
         .example { background: #eaf3fa; border-left: 4px solid #16406C; padding: 15px 24px; margin: 30px 0 0 0; color: #14375A; border-radius: 7px;}
-        .home-intro { font-size: 1.17rem; color: #26354a; margin-bottom: 32px; }
+        .home-intro { font-size: 1.14rem; color: #26354a; margin-bottom: 28px; }
         footer { text-align: center; margin: 48px 0 16px 0; color: #607a9e; font-size: 1rem; }
+        /* Popup Styles */
+        .popup-overlay {
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(22,64,108,0.30);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+        }
+        .popup-content {
+            background: #fff;
+            border-radius: 14px;
+            box-shadow: 0 4px 20px rgba(22,64,108,0.18);
+            padding: 36px 44px;
+            text-align: center;
+            font-family: 'Montserrat', Arial, sans-serif;
+            color: #16406C;
+            font-size: 1.5rem;
+            position: relative;
+        }
+        .popup-content button {
+            margin-top: 24px;
+            background: #2467a3;
+            color: #fff;
+            font-weight: 600;
+            border: none;
+            border-radius: 7px;
+            padding: 10px 28px;
+            font-size: 1.13rem;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .popup-content button:hover {
+            background: #16406C;
+        }
+        .popup-trigger {
+            display: inline-block;
+            margin: 32px auto 0 auto;
+            background: #eaf3fa;
+            color: #16406C;
+            border: 2px solid #2467a3;
+            border-radius: 6px;
+            padding: 10px 34px;
+            font-size: 1.12rem;
+            font-family: 'Montserrat', Arial, sans-serif;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s, color 0.2s;
+        }
+        .popup-trigger:hover {
+            background: #2467a3;
+            color: #fff;
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>Laman Geografi Rasmi Guru</h1>
-        <div style="margin-top:10px; font-size:1.20rem; font-weight:500;">Sumber Pendidikan & Rujukan Geografi Sekolah</div>
+        <div style="margin-top:10px; font-size:1.18rem; font-weight:500;">Sumber Pendidikan & Rujukan Geografi Sekolah</div>
     </header>
     <nav>
         <a href="index.html" class="active">Utama</a>
         <a href="tanah-pamah.html">Tanah Pamah</a>
+        <a href="fakta.html">Fakta</a>
     </nav>
     <div class="container">
         <h2>Selamat Datang!</h2>
@@ -37,10 +92,10 @@
             Gunakan menu di atas untuk meneroka maklumat tentang Tanah Pamah dan bentuk muka bumi lain di Asia Tenggara.
         </div>
         <ul>
-            <li><strong>Tanah Pamah:</strong> Kawasan yang subur di delta dan lembah sungai, penting untuk pertanian dan petempatan padat.</li>
-            <li><strong>Tanah Tinggi:</strong> Kawasan bukit dan gunung, sumber air dan pelancongan.</li>
-            <li><strong>Pantai & Pinggir Laut:</strong> Penting untuk perikanan dan pelancongan.</li>
-            <li><strong>Tasek & Sungai:</strong> Sumber air utama dan pembangunan.</li>
+            <li><strong>Tanah Pamah:</strong> Kawasan subur di delta dan lembah sungai, sesuai untuk pertanian dan petempatan padat.</li>
+            <li><strong>Tanah Tinggi:</strong> Kawasan bukit dan gunung, penting untuk sumber air dan pelancongan.</li>
+            <li><strong>Pantai & Pinggir Laut:</strong> Kawasan pesisir pantai, sesuai untuk kegiatan perikanan dan pelancongan.</li>
+            <li><strong>Tasek & Sungai:</strong> Sumber air utama, penting untuk kehidupan dan pembangunan.</li>
         </ul>
         <div class="example">
             <strong>Contoh kawasan geografi utama:</strong>
@@ -52,9 +107,29 @@
                 <li>Pantai Langkawi</li>
             </ul>
         </div>
+        <button class="popup-trigger" onclick="showPopup()">Klik untuk Terima Kasih</button>
+    </div>
+    <div class="popup-overlay" id="popup">
+        <div class="popup-content">
+            Terima kasih kerana melawat laman ini! 🌟
+            <br>
+            <button onclick="hidePopup()">Tutup</button>
+        </div>
     </div>
     <footer>
         © 2025. Laman rasmi Geografi untuk guru sekolah. | Dibangunkan oleh powjoeel
     </footer>
+    <script>
+        function showPopup() {
+            document.getElementById('popup').style.display = 'flex';
+        }
+        function hidePopup() {
+            document.getElementById('popup').style.display = 'none';
+        }
+        // Optional: Close popup when clicking outside
+        document.getElementById('popup').addEventListener('click', function(e) {
+            if (e.target === this) hidePopup();
+        });
+    </script>
 </body>
 </html>
