@@ -1,1 +1,87 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <title>Senarai Tanah Pamah Asia Tenggara</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Roboto', Arial, sans-serif; background: #f4f8fb; margin: 0; }
+        header { background: linear-gradient(90deg, #16406C 75%, #2467a3 100%); color: #fff; padding: 40px 0 20px 0; text-align: center; box-shadow: 0 2px 8px rgba(22,64,108,0.10);}
+        header h1 { font-family: 'Montserrat', Arial, sans-serif; font-weight: 700; font-size: 2.35rem; margin: 0; letter-spacing: 1px; }
+        nav { background: #e0ebf7; text-align: center; padding: 15px 0; font-size: 1.18rem; box-shadow: 0 2px 8px rgba(22,64,108,0.10);}
+        nav a { color: #16406C; text-decoration: none; margin: 0 22px; font-weight: 600; transition: color 0.2s, background 0.2s; padding: 7px 18px; border-radius: 6px;}
+        nav a.active, nav a:hover { color: #fff; background: #16406C; }
+        .container { max-width: 750px; margin: 50px auto 24px auto; background: #fff; border-radius: 14px; box-shadow: 0 4px 16px rgba(22,64,108,0.10); padding: 48px 40px 38px 40px; }
+        h2 { font-family: 'Montserrat', Arial, sans-serif; color: #16406C; font-size: 1.55rem; margin-top: 0; margin-bottom: 24px; border-left: 5px solid #16406C; padding-left: 14px; }
+        .map-section { margin-bottom: 36px; text-align: center;}
+        .map-title { font-family: 'Montserrat', Arial, sans-serif; color: #2467a3; font-size: 1.18rem; margin-bottom: 16px; font-weight: 700;}
+        .map-img { max-width: 100%; height: auto; border: 4px solid #2467a3; border-radius: 12px; box-shadow: 0 2px 12px rgba(22,64,108,0.13);}
+        .img-caption { color: #16406C; font-size: 1.02rem; margin-top: 7px; font-style: italic;}
+        .list-wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 18px;}
+        .tanah-card { background: #eaf3fa; border-left: 4px solid #2467a3; padding: 15px 18px; border-radius: 8px; margin-bottom: 0; box-shadow: 0 2px 8px rgba(22,64,108,0.06);}
+        .tanah-card strong { color: #16406C; font-size: 1.05rem;}
+        .info { background: #f8fafc; border-left: 4px solid #16406C; padding: 15px 24px; margin: 32px 0 0 0; color: #14375A; border-radius: 7px; }
+        @media (max-width: 900px) {
+            .container { padding: 24px 8vw 24px 8vw; }
+            .list-wrap { grid-template-columns: 1fr; }
+            .map-img { height: auto; }
+        }
+        footer { text-align: center; margin: 48px 0 16px 0; color: #607a9e; font-size: 1rem; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Senarai Tanah Pamah Asia Tenggara</h1>
+    </header>
+    <nav>
+        <a href="index.html">Utama</a>
+        <a href="tanah-pamah.html" class="active">Tanah Pamah</a>
+        <a href="fakta.html">Fakta</a>
+    </nav>
+    <div class="container">
+        <h2>Tanah Pamah Utama di Asia Tenggara</h2>
+        <section class="map-section">
+            <div class="map-title">Peta Tanah Pamah di Asia Tenggara</div>
+            <img src="images/peta-tanah-pamah.jpg" alt="Peta Tanah Pamah Asia Tenggara" class="map-img">
+            <div class="img-caption">Peta bentuk muka bumi Asia Tenggara & kawasan tanah pamah (sumber buku teks).</div>
+        </section>
+        <div class="list-wrap">
+            <div class="tanah-card"><strong>Dataran Chao Phraya</strong><br><span>Thailand</span></div>
+            <div class="tanah-card"><strong>Dataran Irrawaddy</strong><br><span>Myanmar</span></div>
+            <div class="tanah-card"><strong>Dataran Menam</strong><br><span>Thailand</span></div>
+            <div class="tanah-card"><strong>Dataran Mekong</strong><br><span>Thailand, Laos, Kemboja, Vietnam</span></div>
+            <div class="tanah-card"><strong>Dataran Tonle Sap</strong><br><span>Kemboja</span></div>
+            <div class="tanah-card"><strong>Delta Mekong</strong><br><span>Vietnam</span></div>
+            <div class="tanah-card"><strong>Delta Irrawaddy</strong><br><span>Myanmar</span></div>
+            <div class="tanah-card"><strong>Dataran Kinta</strong><br><span>Malaysia</span></div>
+            <div class="tanah-card"><strong>Dataran Kedah-Perlis</strong><br><span>Malaysia</span></div>
+            <div class="tanah-card"><strong>Dataran Pantai Barat</strong><br><span>Malaysia</span></div>
+            <div class="tanah-card"><strong>Dataran Pantai Timur</strong><br><span>Malaysia</span></div>
+            <div class="tanah-card"><strong>Dataran Kapuas</strong><br><span>Kalimantan Barat, Indonesia</span></div>
+            <div class="tanah-card"><strong>Dataran Barito</strong><br><span>Kalimantan Tengah, Indonesia</span></div>
+            <div class="tanah-card"><strong>Dataran Mahakam</strong><br><span>Kalimantan Timur, Indonesia</span></div>
+            <div class="tanah-card"><strong>Dataran Musi</strong><br><span>Sumatera Selatan, Indonesia</span></div>
+            <div class="tanah-card"><strong>Dataran Palembang</strong><br><span>Indonesia</span></div>
+            <div class="tanah-card"><strong>Dataran Solo</strong><br><span>Pulau Jawa, Indonesia</span></div>
+            <div class="tanah-card"><strong>Dataran Cagayan</strong><br><span>Filipina</span></div>
+            <div class="tanah-card"><strong>Dataran Central Luzon</strong><br><span>Filipina</span></div>
+            <div class="tanah-card"><strong>Dataran Mindanao</strong><br><span>Filipina</span></div>
+            <div class="tanah-card"><strong>near my house lol,so you know this sint chatgpt,here:"vjdfbvbd it cant tpe tht without a closing sentence thing</strong><span>.</span></strong>
+        </div>
+        <div class="info">
+            <strong>Nota:</strong> Tanah pamah merupakan kawasan yang subur dan sesuai untuk pertanian serta mempunyai kepadatan penduduk yang tinggi kerana kemudahan jaringan perhubungan dan petempatan.
+        </div>
+    </div>
+    <footer>
+        © 2025. Laman rasmi Geografi untuk guru sekolah. | Dibangunkan oleh powjoeel,pavin and carson
+    </footer>
+</body>
+
+</html>
+
+
+
+
+
 
